@@ -1,0 +1,152 @@
+/* basic general style */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+/* NAV BAR */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2em;
+    font-size: 16px;
+}
+
+nav a,
+i {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+nav .fa {
+    font-size: 20px;
+}
+
+nav a.topimage {
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav i:hover {
+    background: rgb(235, 233, 233);
+    box-shadow: 0 0 0 10px rgb(235, 233, 233);
+    border-radius: 20px;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 75%;
+}
+
+main #google_log {
+    text-align: center;
+
+}
+
+input {
+    width: 40%;
+    padding: 12px;
+    border-style: solid;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid #c4c4c4;
+    margin-top: 20px;
+
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+input:hover {
+    box-shadow: 0 0 10px 2px rgb(233, 233, 233);
+}
+
+.button_con button {
+    padding: 5px 10px;
+    border: none;
+    margin: 10px;
+    outline: none;
+    border-radius: 7px;
+    background-color: rgb(235, 233, 233);
+}
+
+.button_con button:hover {
+    border-radius: 7px;
+    background: rgb(235, 233, 233);
+    border: 1px solid
+}
+
+/* styling for footer tag */
+footer {
+    background-color: rgb(235, 233, 233);
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-top {
+    padding: 1px;
+
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5em;
+    border-top: 0.5px solid;
+}
+
+.left a,
+.right a {
+    margin-right: 1em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+p:hover {
+    text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 576px) {
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .left,
+    .right {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    nav a {
+        display: none;
+    }
+}
